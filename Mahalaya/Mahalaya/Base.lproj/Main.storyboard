@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mahalaya" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKM-p6-Btn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ce5-0Z-k7R">
+                                        <rect key="frame" x="30" y="45" width="315" height="2"/>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rON-le-odU">
+                                        <rect key="frame" x="164" y="55" width="46" height="30"/>
+                                        <state key="normal" backgroundImage="Play-Button-Transparent-Background"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.53333333329999999" green="0.6588235294" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rON-le-odU" secondAttribute="bottom" constant="29" id="7k6-kg-O3V"/>
+                                    <constraint firstAttribute="height" constant="114" id="Fgy-AP-R2U"/>
+                                    <constraint firstItem="ce5-0Z-k7R" firstAttribute="top" secondItem="SKM-p6-Btn" secondAttribute="top" constant="45" id="HDf-e3-zuJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ce5-0Z-k7R" secondAttribute="trailing" constant="30" id="RfP-GI-d6X"/>
+                                    <constraint firstItem="rON-le-odU" firstAttribute="leading" secondItem="SKM-p6-Btn" secondAttribute="leading" constant="164" id="Vyt-hN-As4"/>
+                                    <constraint firstItem="ce5-0Z-k7R" firstAttribute="leading" secondItem="SKM-p6-Btn" secondAttribute="leading" constant="30" id="aKs-qD-7uC"/>
+                                    <constraint firstItem="rON-le-odU" firstAttribute="centerX" secondItem="SKM-p6-Btn" secondAttribute="centerX" id="qjf-qR-ewk"/>
+                                    <constraint firstItem="rON-le-odU" firstAttribute="top" secondItem="SKM-p6-Btn" secondAttribute="top" constant="55" id="zIf-iK-DJH"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xF9-kQ-7QM">
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PeS-Sw-jee">
+                                        <rect key="frame" x="8" y="8" width="359" height="537"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PeS-Sw-jee" firstAttribute="leading" secondItem="xF9-kQ-7QM" secondAttribute="leading" constant="8" id="1Ur-by-Y5R"/>
+                                    <constraint firstItem="PeS-Sw-jee" firstAttribute="top" secondItem="xF9-kQ-7QM" secondAttribute="top" constant="8" id="5D5-HB-xMq"/>
+                                    <constraint firstItem="PeS-Sw-jee" firstAttribute="centerX" secondItem="xF9-kQ-7QM" secondAttribute="centerX" id="lqs-2Q-gpo"/>
+                                    <constraint firstAttribute="trailing" secondItem="PeS-Sw-jee" secondAttribute="trailing" constant="8" id="oNB-dN-M9g"/>
+                                    <constraint firstItem="PeS-Sw-jee" firstAttribute="centerY" secondItem="xF9-kQ-7QM" secondAttribute="centerY" id="xXl-WE-Dme"/>
+                                    <constraint firstAttribute="bottom" secondItem="PeS-Sw-jee" secondAttribute="bottom" constant="8" id="xvo-mT-Kxl"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xF9-kQ-7QM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5QV-vW-fn4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xF9-kQ-7QM" secondAttribute="bottom" id="8lI-dU-Jh0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xF9-kQ-7QM" secondAttribute="bottom" id="Ti1-YG-yKV"/>
+                            <constraint firstAttribute="trailing" secondItem="xF9-kQ-7QM" secondAttribute="trailing" id="ena-Qm-duQ"/>
+                            <constraint firstAttribute="trailing" secondItem="SKM-p6-Btn" secondAttribute="trailing" id="gSN-yE-i10"/>
+                            <constraint firstItem="SKM-p6-Btn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="in0-dI-5eE"/>
+                            <constraint firstItem="xF9-kQ-7QM" firstAttribute="top" secondItem="SKM-p6-Btn" secondAttribute="bottom" id="ljY-K2-RNS"/>
+                            <constraint firstItem="SKM-p6-Btn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w60-Ix-2rI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Play-Button-Transparent-Background" width="626" height="626"/>
+    </resources>
 </document>
