@@ -79,9 +79,16 @@ didSignInForUser:(GIDGoogleUser *)user
         [FIRGoogleAuthProvider credentialWithIDToken:authentication.idToken
                                          accessToken:authentication.accessToken];
         // ...
-        
+        [[FIRAuth auth] signInWithCredential:credential completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+            if(user){
+                NSString * welcomeMessage = [NSString stringWithFormat:@"Welcome to Firebase %@", user.displayName];
+                NSLog(@"%@",welcomeMessage);
+                //_SignInBtn.hidden = false;
+            }
+        }];
     } else {
         // ...
+        NSLog(@"%@",error.localizedDescription);
     }
 }
 
