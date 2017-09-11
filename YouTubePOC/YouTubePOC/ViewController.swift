@@ -1,12 +1,14 @@
 //
 //  ViewController.swift
-//  Mahalaya
+//  YouTubePOC
 //
-//  Created by Apple on 22/08/17.
+//  Created by Apple on 24/08/17.
 //  Copyright © 2017 Interactionone. All rights reserved.
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -20,9 +22,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet weak var playpauseBtnOutlet: UIButton!
-    @IBAction func playpauseBtnAction(_ sender: UIButton) {
-        
+    override func viewDidAppear(_ animated: Bool) {
+        let videoURL = URL(string: "https://www.youtube.com/watch?v=-oPDo6vpnVw")
+        let player = AVPlayer(url: videoURL!)
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = self.view.bounds
+        self.view.layer.addSublayer(playerLayer)
+        player.play()
     }
 
 }

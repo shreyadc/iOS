@@ -27,18 +27,22 @@
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ce5-0Z-k7R">
                                         <rect key="frame" x="30" y="45" width="315" height="2"/>
                                     </progressView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rON-le-odU">
-                                        <rect key="frame" x="164" y="55" width="46" height="30"/>
-                                        <state key="normal" backgroundImage="Play-Button-Transparent-Background"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rON-le-odU">
+                                        <rect key="frame" x="162.5" y="55" width="51" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="4Te-Zw-QSs"/>
+                                            <constraint firstAttribute="width" constant="51" id="K8b-E6-MIe"/>
+                                        </constraints>
+                                        <state key="normal" image="Play"/>
+                                        <connections>
+                                            <action selector="playpauseBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vhT-TO-Q3p"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.53333333329999999" green="0.6588235294" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="rON-le-odU" secondAttribute="bottom" constant="29" id="7k6-kg-O3V"/>
-                                    <constraint firstAttribute="height" constant="114" id="Fgy-AP-R2U"/>
                                     <constraint firstItem="ce5-0Z-k7R" firstAttribute="top" secondItem="SKM-p6-Btn" secondAttribute="top" constant="45" id="HDf-e3-zuJ"/>
                                     <constraint firstAttribute="trailing" secondItem="ce5-0Z-k7R" secondAttribute="trailing" constant="30" id="RfP-GI-d6X"/>
-                                    <constraint firstItem="rON-le-odU" firstAttribute="leading" secondItem="SKM-p6-Btn" secondAttribute="leading" constant="164" id="Vyt-hN-As4"/>
                                     <constraint firstItem="ce5-0Z-k7R" firstAttribute="leading" secondItem="SKM-p6-Btn" secondAttribute="leading" constant="30" id="aKs-qD-7uC"/>
                                     <constraint firstItem="rON-le-odU" firstAttribute="centerX" secondItem="SKM-p6-Btn" secondAttribute="centerX" id="qjf-qR-ewk"/>
                                     <constraint firstItem="rON-le-odU" firstAttribute="top" secondItem="SKM-p6-Btn" secondAttribute="top" constant="55" id="zIf-iK-DJH"/>
@@ -50,7 +54,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PeS-Sw-jee">
                                         <rect key="frame" x="8" y="8" width="359" height="537"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -67,6 +71,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xF9-kQ-7QM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="114" id="4h3-H1-h0K"/>
                             <constraint firstItem="xF9-kQ-7QM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5QV-vW-fn4"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xF9-kQ-7QM" secondAttribute="bottom" id="8lI-dU-Jh0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xF9-kQ-7QM" secondAttribute="bottom" id="Ti1-YG-yKV"/>
@@ -77,6 +82,9 @@
                             <constraint firstItem="SKM-p6-Btn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w60-Ix-2rI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playpauseBtnOutlet" destination="rON-le-odU" id="zeY-uL-jEA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,6 +92,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Play-Button-Transparent-Background" width="626" height="626"/>
+        <image name="Play" width="626" height="626"/>
     </resources>
 </document>
