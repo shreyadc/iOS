@@ -14,6 +14,7 @@
 		181B7B461F664DD100567452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181B7B451F664DD100567452 /* Assets.xcassets */; };
 		181B7B491F664DD100567452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181B7B471F664DD100567452 /* LaunchScreen.storyboard */; };
 		181B7B511F66525D00567452 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 181B7B501F66525D00567452 /* GoogleService-Info.plist */; };
+		44A3CF10C84706313D7C21C1 /* libPods-LoginPOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFD9642BE758DDF14530345 /* libPods-LoginPOC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		181B7B481F664DD100567452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181B7B4A1F664DD100567452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181B7B501F66525D00567452 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5EFD9642BE758DDF14530345 /* libPods-LoginPOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoginPOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99214754A3EDBCBA8F09F6E6 /* Pods-LoginPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginPOC/Pods-LoginPOC.release.xcconfig"; sourceTree = "<group>"; };
+		CE336947B16AA79E44888B5E /* Pods-LoginPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginPOC/Pods-LoginPOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A3CF10C84706313D7C21C1 /* libPods-LoginPOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				181B7B381F664DD100567452 /* LoginPOC */,
 				181B7B371F664DD100567452 /* Products */,
+				41EEEB2FF8A05951235B432F /* Pods */,
+				46C6FEE3983FD2435803B6B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +89,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		41EEEB2FF8A05951235B432F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE336947B16AA79E44888B5E /* Pods-LoginPOC.debug.xcconfig */,
+				99214754A3EDBCBA8F09F6E6 /* Pods-LoginPOC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		46C6FEE3983FD2435803B6B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EFD9642BE758DDF14530345 /* libPods-LoginPOC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181B7B4D1F664DD100567452 /* Build configuration list for PBXNativeTarget "LoginPOC" */;
 			buildPhases = (
+				F10C367713BDD690C603CF07 /* [CP] Check Pods Manifest.lock */,
 				181B7B321F664DD100567452 /* Sources */,
 				181B7B331F664DD100567452 /* Frameworks */,
 				181B7B341F664DD100567452 /* Resources */,
+				B28A5521003B48FFD99B9937 /* [CP] Embed Pods Frameworks */,
+				C80C7EE1E0D793D6140E5779 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B28A5521003B48FFD99B9937 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoginPOC/Pods-LoginPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C80C7EE1E0D793D6140E5779 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoginPOC/Pods-LoginPOC-resources.sh",
+				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoginPOC/Pods-LoginPOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F10C367713BDD690C603CF07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		181B7B321F664DD100567452 /* Sources */ = {
@@ -274,6 +356,7 @@
 		};
 		181B7B4E1F664DD100567452 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE336947B16AA79E44888B5E /* Pods-LoginPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoginPOC/Info.plist;
@@ -285,6 +368,7 @@
 		};
 		181B7B4F1F664DD100567452 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99214754A3EDBCBA8F09F6E6 /* Pods-LoginPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoginPOC/Info.plist;
@@ -313,6 +397,7 @@
 				181B7B4F1F664DD100567452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

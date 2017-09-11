@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *SignInBtn;
 
 @end
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [GIDSignIn sharedInstance].uiDelegate = self;
+    [[GIDSignIn sharedInstance] signIn];
+
 }
 
 
@@ -25,5 +30,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)SignInBtnClicked:(UIButton *)sender {
+}
 
 @end
